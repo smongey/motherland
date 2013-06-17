@@ -1,0 +1,101 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@mixin serif($a, $b) {
+	font:#{$a}/#{$b} 'LeMondeJournalStd-Regular', Georgia, serif;
+}
+
+
+* { @include box-sizing(border-box); }
+body { background-color: #e6e6e5; letter-spacing: 1px; }
+::selection { color:#00ada6; background: #fff; }
+::-moz-selection { color:#00ada6; background: #fff; }
+::-webkit-selection { color:#00ada6; background: #fff; }
+
+// h1, h2, h3, h4 { -webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+
+#about, #work, #contact { margin: 100px auto; }
+
+section#intro { overflow: hidden;
+	div.wrap { padding: 40px; }
+	div.logo { position: absolute; z-index: 9999; display: block; left:50%; top:50%; margin-left: -380px; margin-top: -85px; }
+	a.arrow { display: block; position:absolute; z-index: 9999; width: 50px; height: 50px; background: url(../img/arrow.svg); left: 50%; margin-left: -25px; bottom: 60px; @include single-transition(bottom, ease, .2s) }
+	a.arrow:hover { bottom: 55px }
+	.slides { position:  relative; z-index: 8888;
+		img {  }
+	}
+}
+
+section#about { margin:100px auto 150px auto;
+
+}
+
+section#work {
+	.row { margin-bottom: 20px; }
+	.heading { text-align: center; @include serif(36px, 40px); margin-bottom: 40px; }
+	.project {  text-align: center; position: relative;
+		a { color: #000; }
+		img { @include single-transition(opacity, ease, .2s); }
+		h3 { position: absolute; width: 100%; text-align: center; opacity:0; @include single-transition(opacity, ease, .2s); }
+	}
+	.project:hover {
+		img { opacity: .5; }
+		h3 { opacity: 1; }
+	}
+
+}
+
+section#contact { text-align: center; 
+	.heading { text-align: center; @include serif(36px, 40px); margin-bottom: 60px; }
+	a { display: block; color: #000000; @include single-transition(color, ease, .2s); }
+	a:hover { color: #00ada6; text-decoration: none; }
+}
+
+footer { text-align: center; @include serif(12px, 20px); margin:50px auto;
+	a { display: block; color: #000000; @include single-transition(color, ease, .2s); }
+	a:hover { color: #ea2e49; text-decoration: none; }
+}
+
+
+@media (max-width: 767px) {
+
+	section#about { margin: 40px; }
+
+}
+
+@media (max-width: 979px) {
+
+	body {  @include serif(22px, 30px); }
+	section#contact { @include serif(18px, 30px); }
+	section#work .project h3 {  @include serif(18px, 28px); opacity: 1; margin-top: 0; }
+	section#work .project { margin-bottom: 70px; }
+
+}
+
+@media (min-width: 980px) {
+
+	body {  @include serif(24px, 36px); }
+	section#contact { @include serif(24px, 40px); }
+	section#work .project h3 {  @include serif(22px, 30px); margin-top: -150px;  }
+
+}
+
+@media (min-width: 1200px) {
+
+	body {  @include serif(28px, 40px); }
+	section#contact { @include serif(28px, 44px); }
+	section#work .project h3 {  @include serif(28px, 36px); margin-top: -180px; }
+}
+
+@media (max-width: 480px) {
+
+	section#about { margin: 30px; }
+}
+
+
+/*! Version: 2.0.73 (12-Oct-2012) */.mc-hide-scrolls{overflow:hidden}body .mc-cycle{height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:-1}div.mc-image{-webkit-transition:opacity 1s ease-in-out;-moz-transition:opacity 1s ease-in-out;-o-transition:opacity 1s ease-in-out;transition:opacity 1s ease-in-out;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center center;background-repeat:no-repeat;height:100%;overflow:hidden;width:100%}.mc-old-browser .mc-image{overflow:hidden}

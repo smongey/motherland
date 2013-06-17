@@ -1,0 +1,300 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 14, ../scss/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 15, ../scss/screen.scss */
+body {
+  background-color: #e6e6e5;
+  letter-spacing: 1px; }
+
+/* line 16, ../scss/screen.scss */
+::selection {
+  color: #00ada6;
+  background: #fff; }
+
+/* line 17, ../scss/screen.scss */
+::-moz-selection {
+  color: #00ada6;
+  background: #fff; }
+
+/* line 18, ../scss/screen.scss */
+::-webkit-selection {
+  color: #00ada6;
+  background: #fff; }
+
+/* line 22, ../scss/screen.scss */
+#about, #work, #contact {
+  margin: 100px auto; }
+
+/* line 24, ../scss/screen.scss */
+section#intro {
+  overflow: hidden; }
+  /* line 25, ../scss/screen.scss */
+  section#intro div.wrap {
+    padding: 40px; }
+  /* line 26, ../scss/screen.scss */
+  section#intro div.logo {
+    position: absolute;
+    z-index: 9999;
+    display: block;
+    left: 50%;
+    top: 50%;
+    margin-left: -380px;
+    margin-top: -85px; }
+  /* line 27, ../scss/screen.scss */
+  section#intro a.arrow {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrow.svg);
+    left: 50%;
+    margin-left: -25px;
+    bottom: 60px;
+    -webkit-transition: bottom ease;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: bottom ease 0.2s;
+    -o-transition: bottom ease 0.2s;
+    transition: bottom ease 0.2s; }
+  /* line 28, ../scss/screen.scss */
+  section#intro a.arrow:hover {
+    bottom: 55px; }
+  /* line 29, ../scss/screen.scss */
+  section#intro .slides {
+    position: relative;
+    z-index: 8888; }
+
+/* line 34, ../scss/screen.scss */
+section#about {
+  margin: 100px auto 150px auto; }
+
+/* line 39, ../scss/screen.scss */
+section#work .row {
+  margin-bottom: 20px; }
+/* line 40, ../scss/screen.scss */
+section#work .heading {
+  text-align: center;
+  font: 36px/40px "LeMondeJournalStd-Regular", Georgia, serif;
+  margin-bottom: 40px; }
+/* line 41, ../scss/screen.scss */
+section#work .project {
+  text-align: center;
+  position: relative; }
+  /* line 42, ../scss/screen.scss */
+  section#work .project a {
+    color: #000; }
+  /* line 43, ../scss/screen.scss */
+  section#work .project img {
+    -webkit-transition: opacity ease;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: opacity ease 0.2s;
+    -o-transition: opacity ease 0.2s;
+    transition: opacity ease 0.2s; }
+  /* line 44, ../scss/screen.scss */
+  section#work .project h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity ease;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: opacity ease 0.2s;
+    -o-transition: opacity ease 0.2s;
+    transition: opacity ease 0.2s; }
+/* line 47, ../scss/screen.scss */
+section#work .project:hover img {
+  opacity: .5; }
+/* line 48, ../scss/screen.scss */
+section#work .project:hover h3 {
+  opacity: 1; }
+
+/* line 53, ../scss/screen.scss */
+section#contact {
+  text-align: center; }
+  /* line 54, ../scss/screen.scss */
+  section#contact .heading {
+    text-align: center;
+    font: 36px/40px "LeMondeJournalStd-Regular", Georgia, serif;
+    margin-bottom: 60px; }
+  /* line 55, ../scss/screen.scss */
+  section#contact a {
+    display: block;
+    color: #000000;
+    -webkit-transition: color ease;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: color ease 0.2s;
+    -o-transition: color ease 0.2s;
+    transition: color ease 0.2s; }
+  /* line 56, ../scss/screen.scss */
+  section#contact a:hover {
+    color: #00ada6;
+    text-decoration: none; }
+
+/* line 59, ../scss/screen.scss */
+footer {
+  text-align: center;
+  font: 12px/20px "LeMondeJournalStd-Regular", Georgia, serif;
+  margin: 50px auto; }
+  /* line 60, ../scss/screen.scss */
+  footer a {
+    display: block;
+    color: #000000;
+    -webkit-transition: color ease;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: color ease 0.2s;
+    -o-transition: color ease 0.2s;
+    transition: color ease 0.2s; }
+  /* line 61, ../scss/screen.scss */
+  footer a:hover {
+    color: #ea2e49;
+    text-decoration: none; }
+
+@media (max-width: 767px) {
+  /* line 67, ../scss/screen.scss */
+  section#about {
+    margin: 40px; } }
+@media (max-width: 979px) {
+  /* line 73, ../scss/screen.scss */
+  body {
+    font: 22px/30px "LeMondeJournalStd-Regular", Georgia, serif; }
+
+  /* line 74, ../scss/screen.scss */
+  section#contact {
+    font: 18px/30px "LeMondeJournalStd-Regular", Georgia, serif; }
+
+  /* line 75, ../scss/screen.scss */
+  section#work .project h3 {
+    font: 18px/28px "LeMondeJournalStd-Regular", Georgia, serif;
+    opacity: 1;
+    margin-top: 0; }
+
+  /* line 76, ../scss/screen.scss */
+  section#work .project {
+    margin-bottom: 70px; } }
+@media (min-width: 980px) {
+  /* line 82, ../scss/screen.scss */
+  body {
+    font: 24px/36px "LeMondeJournalStd-Regular", Georgia, serif; }
+
+  /* line 83, ../scss/screen.scss */
+  section#contact {
+    font: 24px/40px "LeMondeJournalStd-Regular", Georgia, serif; }
+
+  /* line 84, ../scss/screen.scss */
+  section#work .project h3 {
+    font: 22px/30px "LeMondeJournalStd-Regular", Georgia, serif;
+    margin-top: -150px; } }
+@media (min-width: 1200px) {
+  /* line 90, ../scss/screen.scss */
+  body {
+    font: 28px/40px "LeMondeJournalStd-Regular", Georgia, serif; }
+
+  /* line 91, ../scss/screen.scss */
+  section#contact {
+    font: 28px/44px "LeMondeJournalStd-Regular", Georgia, serif; }
+
+  /* line 92, ../scss/screen.scss */
+  section#work .project h3 {
+    font: 28px/36px "LeMondeJournalStd-Regular", Georgia, serif;
+    margin-top: -180px; } }
+@media (max-width: 480px) {
+  /* line 97, ../scss/screen.scss */
+  section#about {
+    margin: 30px; } }
+/* Version: 2.0.73 (12-Oct-2012) */
+/* line 101, ../scss/screen.scss */
+.mc-hide-scrolls {
+  overflow: hidden; }
+
+/* line 101, ../scss/screen.scss */
+body .mc-cycle {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+
+/* line 101, ../scss/screen.scss */
+div.mc-image {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+  width: 100%; }
+
+/* line 101, ../scss/screen.scss */
+.mc-old-browser .mc-image {
+  overflow: hidden; }
