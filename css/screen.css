@@ -114,10 +114,11 @@ section#intro {
     left: 50%;
     margin-left: -25px;
     bottom: 60px;
-    -webkit-transition: bottom ease 0.2s;
-    -moz-transition: bottom ease 0.2s;
-    -o-transition: bottom ease 0.2s;
-    transition: bottom ease 0.2s; }
+    -webkit-transition: bottom 0.2s ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition: bottom 0.2s ease 0s;
+    -o-transition: bottom 0.2s ease 0s;
+    transition: bottom 0.2s ease 0s; }
   /* line 28, ../scss/screen.scss */
   section#intro a.arrow:hover {
     bottom: 55px; }
@@ -147,7 +148,8 @@ section#work .project {
     color: #000; }
   /* line 43, ../scss/screen.scss */
   section#work .project img {
-    -webkit-transition: opacity ease 0.2s;
+    -webkit-transition: opacity ease;
+    -webkit-transition-delay: 0.2s;
     -moz-transition: opacity ease 0.2s;
     -o-transition: opacity ease 0.2s;
     transition: opacity ease 0.2s; }
@@ -157,10 +159,11 @@ section#work .project {
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-transition: opacity ease 0.2s;
-    -moz-transition: opacity ease 0.2s;
-    -o-transition: opacity ease 0.2s;
-    transition: opacity ease 0.2s; }
+    -webkit-transition: opacity 0.2s ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition: opacity 0.2s ease 0s;
+    -o-transition: opacity 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s; }
 /* line 47, ../scss/screen.scss */
 section#work .project:hover img {
   opacity: .5; }
@@ -180,10 +183,11 @@ section#contact {
   section#contact a {
     display: block;
     color: #000000;
-    -webkit-transition: color ease 0.2s;
-    -moz-transition: color ease 0.2s;
-    -o-transition: color ease 0.2s;
-    transition: color ease 0.2s; }
+    -webkit-transition: color 0.2s ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition: color 0.2s ease 0s;
+    -o-transition: color 0.2s ease 0s;
+    transition: color 0.2s ease 0s; }
   /* line 56, ../scss/screen.scss */
   section#contact a:hover {
     color: #00ada6;
@@ -198,10 +202,11 @@ footer {
   footer a {
     display: block;
     color: #000000;
-    -webkit-transition: color ease 0.2s;
-    -moz-transition: color ease 0.2s;
-    -o-transition: color ease 0.2s;
-    transition: color ease 0.2s; }
+    -webkit-transition: color 0.2s ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition: color 0.2s ease 0s;
+    -o-transition: color 0.2s ease 0s;
+    transition: color 0.2s ease 0s; }
   /* line 61, ../scss/screen.scss */
   footer a:hover {
     color: #ea2e49;
