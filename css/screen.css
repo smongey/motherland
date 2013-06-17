@@ -114,8 +114,7 @@ section#intro {
     left: 50%;
     margin-left: -25px;
     bottom: 60px;
-    -webkit-transition: bottom ease;
-    -webkit-transition-delay: 0.2s;
+    -webkit-transition: bottom ease 0.2s;
     -moz-transition: bottom ease 0.2s;
     -o-transition: bottom ease 0.2s;
     transition: bottom ease 0.2s; }
@@ -148,8 +147,7 @@ section#work .project {
     color: #000; }
   /* line 43, ../scss/screen.scss */
   section#work .project img {
-    -webkit-transition: opacity ease;
-    -webkit-transition-delay: 0.2s;
+    -webkit-transition: opacity ease 0.2s;
     -moz-transition: opacity ease 0.2s;
     -o-transition: opacity ease 0.2s;
     transition: opacity ease 0.2s; }
@@ -159,8 +157,7 @@ section#work .project {
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-transition: opacity ease;
-    -webkit-transition-delay: 0.2s;
+    -webkit-transition: opacity ease 0.2s;
     -moz-transition: opacity ease 0.2s;
     -o-transition: opacity ease 0.2s;
     transition: opacity ease 0.2s; }
@@ -183,8 +180,7 @@ section#contact {
   section#contact a {
     display: block;
     color: #000000;
-    -webkit-transition: color ease;
-    -webkit-transition-delay: 0.2s;
+    -webkit-transition: color ease 0.2s;
     -moz-transition: color ease 0.2s;
     -o-transition: color ease 0.2s;
     transition: color ease 0.2s; }
@@ -202,8 +198,7 @@ footer {
   footer a {
     display: block;
     color: #000000;
-    -webkit-transition: color ease;
-    -webkit-transition-delay: 0.2s;
+    -webkit-transition: color ease 0.2s;
     -moz-transition: color ease 0.2s;
     -o-transition: color ease 0.2s;
     transition: color ease 0.2s; }
